@@ -1,0 +1,454 @@
+<?php
+function cctv(){    
+    $tv = array(
+        3641 => array ( 'name' => 'CCTV1-综合高清', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225530/index.m3u8', ), 
+		3642 => array ( 'name' => '测试', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000b899/desc.m3u8', ), 
+        3643 => array ( 'name' => 'CCTV2-财经', 'playurl' => 'http://125.88.92.166:30001/PLTV/88888956/224/3221227666/1.m3u8', ), 
+        3644 => array ( 'name' => 'CCTV3-综艺高清', 'playurl' => 'http://183.207.249.5/PLTV/3/224/3221225588/index.m3u8', ), 
+        3646 => array ( 'name' => 'CCTV4-中文国际', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225534/index.m3u8', ), 
+        3647 => array ( 'name' => 'CCTV5高清', 'playurl' => 'http://www.anchoredinversion.com/tv/ds/wasu10.php?id=cctv5hd', ), 
+        3648 => array ( 'name' => 'CCTV-5+体育赛事高清', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225604/index.m3u8', ),
+        3650 => array ( 'name' => 'CCTV6-电影高清', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225548/index.m3u8', ),        
+        3653 => array ( 'name' => 'CCTV-7军事与农业', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225546/index.m3u8', ), 
+        3654 => array ( 'name' => 'CCTV-8电视剧高清', 'playurl' => 'http://kk.luoke.net.cn/cq/datv.php?id=137', ),
+        3657 => array ( 'name' => 'CCTV-9记录国际', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225572/index.m3u8', ), 
+        3658 => array ( 'name' => 'CCTV-10科教', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225550/index.m3u8', ),
+        3661 => array ( 'name' => 'CCTV-11戏曲', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225552/index.m3u8', ), 
+        3662 => array ( 'name' => 'CCTV-12社会与法', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225556/index.m3u8', ),
+        3664 => array ( 'name' => 'CCTV-13新闻', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225560/index.m3u8', ), 
+        3666 => array ( 'name' => 'CCTV-14少儿', 'playurl' => 'http://125.88.92.166:30001/PLTV/88888956/224/3221227675/1.m3u8', ),
+        3668 => array ( 'name' => 'CCTV-15音乐', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225568/index.m3u8', ),         
+    );
+    return $tv;
+}
+function cntv(){    
+    $tv = array(
+        3570 => array ( 'name' => 'CNTV动作电影', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225529/index.m3u8', ), 
+        3571 => array ( 'name' => 'CNTV爱情喜剧', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225525/index.m3u8', ), 
+        3572 => array ( 'name' => 'CNTV古装剧场', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225527/index.m3u8', ), 
+        3573 => array ( 'name' => 'CNTV军旅剧场', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225531/index.m3u8', ), 
+        3574 => array ( 'name' => 'CNTV军事评论', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225533/index.m3u8', ), 
+        3575 => array ( 'name' => 'CNTV明星大片', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225535/index.m3u8', ), 
+        3576 => array ( 'name' => 'CNTV农业致富', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225537/index.m3u8', ), 
+        3577 => array ( 'name' => 'CNTV完美游戏', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225539/index.m3u8', ), 
+        3578 => array ( 'name' => 'CNTV经典影院', 'playurl' => 'http://183.207.249.8/PLTV/3/224/3221225541/index.m3u8', ), 
+        3579 => array ( 'name' => 'CNTV精品大剧', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225591/index.m3u8', ), 
+        3580 => array ( 'name' => 'CNTV精品体育', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225543/index.m3u8', ), 
+        3581 => array ( 'name' => 'CNTV健康有约', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225545/index.m3u8', ), 
+        3582 => array ( 'name' => 'CNTV海外剧场', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225547/index.m3u8', ), 
+        3583 => array ( 'name' => 'CNTV家庭剧场', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225549/index.m3u8', ), 
+        3584 => array ( 'name' => 'CNTV动画王国', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225555/index.m3u8', ), 
+        3585 => array ( 'name' => 'CNTV精品记录', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225557/index.m3u8', ), 
+        3586 => array ( 'name' => 'CNTV金牌综艺', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225559/index.m3u8', ), 
+        3587 => array ( 'name' => 'CNTV惊悚悬疑', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225561/index.m3u8', ), 
+        3588 => array ( 'name' => 'CNTV精品电影', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225567/index.m3u8', ), 
+    );
+    return $tv;
+}
+function wstv(){    
+    $tv = array(    
+        3636 => array ( 'name' => '北京卫视高清', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221226257/index.m3u8', ),
+        // 3690 => array ( 'name' => 'BTV新闻', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225577/index.m3u8', ),             
+        3632 => array ( 'name' => '湖南卫视高清', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225521/index.m3u8', ), 
+        3633 => array ( 'name' => '广东卫视高清', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225592/index.m3u8', ), 
+        3634 => array ( 'name' => '山东卫视高清', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225596/index.m3u8', ), 
+        3635 => array ( 'name' => '黑龙江卫视高清', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225652/index.m3u8', ),      
+        3637 => array ( 'name' => '天津卫视高清', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221226265/index.m3u8', ),        
+        3639 => array ( 'name' => '浙江卫视-高清', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225544/index.m3u8', ),        
+        3590 => array ( 'name' => '东方卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225558/index.m3u8', ),        
+        3592 => array ( 'name' => '浙江卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225544/index.m3u8', ), 
+        3593 => array ( 'name' => '山西卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225576/index.m3u8', ), 
+        3594 => array ( 'name' => '广东卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225578/index.m3u8', ), 
+        3595 => array ( 'name' => '广西卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225554/index.m3u8', ), 
+        3596 => array ( 'name' => '西藏卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225579/index.m3u8', ), 
+        3597 => array ( 'name' => '青海卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225580/index.m3u8', ), 
+        3598 => array ( 'name' => '深圳卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225582/index.m3u8', ), 
+        3599 => array ( 'name' => '四川卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225570/index.m3u8', ), 
+        3600 => array ( 'name' => '旅游卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225585/index.m3u8', ), 
+        3601 => array ( 'name' => '山东卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225586/index.m3u8', ), 
+        3602 => array ( 'name' => '吉林卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225589/index.m3u8', ), 
+        3603 => array ( 'name' => '甘肃卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225590/index.m3u8', ), 
+        3604 => array ( 'name' => '贵州卫视', 'playurl' => 'http://183.207.249.8/PLTV/3/224/3221225540/index.m3u8', ), 
+        3605 => array ( 'name' => '云南卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225569/index.m3u8', ), 
+        3606 => array ( 'name' => '东南卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225598/index.m3u8', ), 
+        3607 => array ( 'name' => '河北卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225602/index.m3u8', ), 
+        3608 => array ( 'name' => '重庆卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225594/index.m3u8', ), 
+        3609 => array ( 'name' => '天津卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225562/index.m3u8', ),        
+        3611 => array ( 'name' => '辽宁卫视', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225566/index.m3u8', ),       
+        3613 => array ( 'name' => '新疆卫视', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225523/index.m3u8', ), 
+        3614 => array ( 'name' => '贵州卫视', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225540/index.m3u8', ), 
+        3615 => array ( 'name' => '东方卫视', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225558/index.m3u8', ), 
+        3616 => array ( 'name' => '四川卫视', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225570/index.m3u8', ), 
+        3617 => array ( 'name' => '内蒙古卫视', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225624/index.m3u8', ), 
+        3618 => array ( 'name' => '安徽卫视', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225634/index.m3u8', ), 
+        3619 => array ( 'name' => '江苏卫视', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225650/index.m3u8', ),       
+        3622 => array ( 'name' => '旅游卫视', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225585/index.m3u8', ), 
+        3623 => array ( 'name' => '东南卫视', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225598/index.m3u8', ), 
+        3624 => array ( 'name' => '江西卫视', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225537/index.m3u8', ), 
+        3625 => array ( 'name' => '广西卫视', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225554/index.m3u8', ), 
+        3626 => array ( 'name' => '山西卫视', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225576/index.m3u8', ), 
+        3627 => array ( 'name' => '金鹰卡通', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225620/index.m3u8', ), 
+        3628 => array ( 'name' => '优漫卡通', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225600/index.m3u8', ), 
+        3629 => array ( 'name' => '第一财经', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225573/index.m3u8', ),      
+        3630 => array ( 'name' => '徐州-1高清', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225945/index.m3u8', ), 
+        3631 => array ( 'name' => '徐州-4高清', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225951/index.m3u8', ), 
+    );
+    return $tv;
+}
+function letv(){    
+    $tv = array(    
+        3774 => array ( 'name' => 'CCTV-1', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000b899/desc.m3u8', ),
+3775 => array ( 'name' => 'CCTV-2', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000bc99/desc.m3u8', ),
+3776 => array ( 'name' => 'CCTV-3', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000bf99/desc.m3u8', ),
+3777 => array ( 'name' => 'CCTV-4', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000bk99/desc.m3u8', ),
+3778 => array ( 'name' => 'CCTV-5', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000bp99/desc.m3u8', ),
+3779 => array ( 'name' => 'CCTV-6', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000br99/desc.m3u8', ),
+3780 => array ( 'name' => 'CCTV-7', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000bu99/desc.m3u8', ),
+3781 => array ( 'name' => 'CCTV-8', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000bv99/desc.m3u8', ),
+3782 => array ( 'name' => 'CCTV-9', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000bz99/desc.m3u8', ),
+3783 => array ( 'name' => 'CCTV-10', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000c199/desc.m3u8', ),
+3784 => array ( 'name' => 'CCTV-11', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000c499/desc.m3u8', ),
+3785 => array ( 'name' => 'CCTV-12', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000c599/desc.m3u8', ),
+3786 => array ( 'name' => 'CCTV-13', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000c699/desc.m3u8', ),
+3787 => array ( 'name' => 'CCTV-14', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000ca99/desc.m3u8', ),
+3788 => array ( 'name' => 'CCTV-15', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000cc99/desc.m3u8', ),
+3789 => array ( 'name' => '东方卫视', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000d099/desc.m3u8', ),
+3790 => array ( 'name' => '广东卫视', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000d499/desc.m3u8', ),
+3791 => array ( 'name' => '湖南卫视', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000cf99/desc.m3u8', ),
+3792 => array ( 'name' => '四川卫视', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000cy99/desc.m3u8', ),
+3793 => array ( 'name' => '深圳卫视', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000cz99/desc.m3u8', ),
+3794 => array ( 'name' => '重庆卫视', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000dd99/desc.m3u8', ),
+3795 => array ( 'name' => '山东卫视', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000de99/desc.m3u8', ),
+3796 => array ( 'name' => '江苏卫视', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000dh99/desc.m3u8', ),
+3797 => array ( 'name' => '天津卫视', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000dj99/desc.m3u8', ),
+3798 => array ( 'name' => '北京卫视', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000dl99/desc.m3u8', ),
+3799 => array ( 'name' => '宁夏卫视', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000dq99/desc.m3u8', ),
+3800 => array ( 'name' => '旅游卫视', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000dt99/desc.m3u8', ),
+3801 => array ( 'name' => '新疆卫视', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/201706223000000du99/desc.m3u8', ),
+3802 => array ( 'name' => '浙江卫视', 'playurl' => 'http://r.gslb.lecloud.com/live/hls/2017062230000006q99/desc.m3u8', ), 
+    );
+    return $tv;
+}
+function qttv(){    
+    $tv = array(
+        3673 => array ( 'name' => '动作电影高清', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225529/index.m3u8', ), 
+        3674 => array ( 'name' => '金牌综艺高清', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225559/index.m3u8', ), 
+        3675 => array ( 'name' => '惊悚悬疑高清', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225561/index.m3u8', ), 
+        3676 => array ( 'name' => '军旅剧场', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225531/index.m3u8', ), 
+        3677 => array ( 'name' => '农业致富', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225537/index.m3u8', ), 
+        3678 => array ( 'name' => '精品体育', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225543/index.m3u8', ), 
+        3679 => array ( 'name' => '海外剧场', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225547/index.m3u8', ), 
+        3680 => array ( 'name' => '古装剧场', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225527/index.m3u8', ), 
+        3681 => array ( 'name' => '动画王国', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225555/index.m3u8', ), 
+        3682 => array ( 'name' => '完美游戏', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225539/index.m3u8', ), 
+        3683 => array ( 'name' => '军事评论', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225533/index.m3u8', ), 
+        3684 => array ( 'name' => '明星大片-高清', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225535/index.m3u8', ), 
+        3685 => array ( 'name' => '电影-高清', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225541/index.m3u8', ), 
+        3686 => array ( 'name' => '健康有约', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225545/index.m3u8', ), 
+        3687 => array ( 'name' => '家庭剧场', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225549/index.m3u8', ), 
+        3688 => array ( 'name' => '精品纪录', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225557/index.m3u8', ), 
+        3689 => array ( 'name' => '精品电影', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225567/index.m3u8', ), 
+        3691 => array ( 'name' => 'GOOD2', 'playurl' => 'http://210.59.248.53/hls-live/livepkgr/_definst_/liveevent/live-ch2-3.m3u8', ),
+        3692 => array ( 'name' => '韩TVN', 'playurl' => 'http://121.156.62.136:1935/chc09/s5.stream/playlist.m3u8', ),
+        3693 => array ( 'name' => '韩-PLAYY', 'playurl' => 'http://123.108.164.71/etv2sb/phd770/lihattv.m3u8', ),
+        3694 => array ( 'name' => '韩KoreaTV', 'playurl' => 'http://111.118.21.79/etv1/phd393/playlist.m3u8', ),
+        3695 => array ( 'name' => '韩-KNN', 'playurl' => 'http://211.220.195.200:1935/live/mp4:KnnTv.stream/playlist.m3u8', ),
+        3696 => array ( 'name' => '韩-KCTVN', 'playurl' => 'http://122.202.129.136:1935/live/ch4/playlist.m3u8', ),
+        3697 => array ( 'name' => '韩INET高清', 'playurl' => 'http://123.108.164.71/etv2sb/pld263/lihattv.m3u8', ),
+        3698 => array ( 'name' => '韩GOODTV', 'playurl' => 'http://123.108.164.71/etv2sb/phd29/playlist.m3u8', ),
+		3710 => array ( 'name' => 'CCTV1-綜合HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225680/index.m3u8', ),
+3711 => array ( 'name' => 'CCTV1-綜合HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225680/index.m3u8', ),
+3712 => array ( 'name' => 'CCTV3-綜藝HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225588/index.m3u8', ),
+3713 => array ( 'name' => 'CCTV4-中文國際HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225534/index.m3u8', ),
+3714 => array ( 'name' => 'CCTV5+-HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225604/index.m3u8', ),
+3715 => array ( 'name' => 'CCTV6-電影HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225548/index.m3u8', ),
+3716 => array ( 'name' => 'CCTV-7軍事與農業HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225546/index.m3u8', ),
+3717 => array ( 'name' => 'CCTV-9記錄國際', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225572/index.m3u8', ),
+3718 => array ( 'name' => 'CCTV10-科教', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225550/index.m3u8', ),
+3719 => array ( 'name' => 'CCTV11-戲曲', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225552/index.m3u8', ),
+3720 => array ( 'name' => 'CCTV12-社會與法', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225556/index.m3u8', ),
+3721 => array ( 'name' => 'CCTV13-新聞', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225560/index.m3u8', ),
+3722 => array ( 'name' => 'CCTV-15音樂', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225568/index.m3u8', ),
+3723 => array ( 'name' => '明星大片HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225535/index.m3u8', ),
+3724 => array ( 'name' => '動作電影HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225529/index.m3u8', ),
+3725 => array ( 'name' => '軍旅劇場', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225531/index.m3u8', ),
+3726 => array ( 'name' => '軍事評論', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225533/index.m3u8', ),
+3727 => array ( 'name' => '海外劇場', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225547/index.m3u8', ),
+3728 => array ( 'name' => '古裝劇場', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225527/index.m3u8', ),
+3729 => array ( 'name' => '動畫有FUN', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225555/index.m3u8', ),
+3730 => array ( 'name' => '金鷹卡通', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225620/index.m3u8', ),
+3731 => array ( 'name' => '完美遊戲', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225539/index.m3u8', ),
+3732 => array ( 'name' => '愛情喜劇', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225525/index.m3u8', ),
+3733 => array ( 'name' => '健康有約', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225545/index.m3u8', ),
+3734 => array ( 'name' => '家庭劇場', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225549/index.m3u8', ),
+3735 => array ( 'name' => '金牌綜藝', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225559/index.m3u8', ),
+3736 => array ( 'name' => '驚悚懸疑', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225561/index.m3u8', ),
+3737 => array ( 'name' => '精品大劇', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225569/index.m3u8', ),
+3738 => array ( 'name' => '精品電影', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225567/index.m3u8', ),
+3739 => array ( 'name' => '精品紀錄', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225557/index.m3u8', ),
+3740 => array ( 'name' => '精品體育', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225543/index.m3u8', ),
+3741 => array ( 'name' => '農業致富', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225537/index.m3u8', ),
+3742 => array ( 'name' => '徐州-1HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225945/index.m3u8', ),
+3743 => array ( 'name' => '徐州-4HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225951/index.m3u8', ),
+3744 => array ( 'name' => '北京衛視HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221226257/index.m3u8', ),
+3745 => array ( 'name' => '天津衛視HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221226265/index.m3u8', ),
+3746 => array ( 'name' => '浙江衛視HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225544/index.m3u8', ),
+3747 => array ( 'name' => '湖南衛視HD', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225521/index.m3u8', ),
+3748 => array ( 'name' => '廣東衛視HD', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225592/index.m3u8', ),
+3749 => array ( 'name' => '黑龍江衛視HD', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225652/index.m3u8', ),
+3750 => array ( 'name' => '北京衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225574/index.m3u8', ),
+3751 => array ( 'name' => '東方衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225558/index.m3u8', ),
+3752 => array ( 'name' => '安徽衛視', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225634/index.m3u8', ),
+3753 => array ( 'name' => '天津衛視', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225562/index.m3u8', ),
+3754 => array ( 'name' => '山西衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225576/index.m3u8', ),
+3755 => array ( 'name' => '廣東衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225578/index.m3u8', ),
+3756 => array ( 'name' => '廣西衛視', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225554/index.m3u8', ),
+3757 => array ( 'name' => '西藏衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225579/index.m3u8', ),
+3758 => array ( 'name' => '青海衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225580/index.m3u8', ),
+3759 => array ( 'name' => '深圳衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225582/index.m3u8', ),
+3760 => array ( 'name' => '旅遊衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225585/index.m3u8', ),
+3761 => array ( 'name' => '山東衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225586/index.m3u8', ),
+3762 => array ( 'name' => '吉林衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225589/index.m3u8', ),
+3763 => array ( 'name' => '甘肅衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225590/index.m3u8', ),
+3764 => array ( 'name' => '雲南衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225591/index.m3u8', ),
+3765 => array ( 'name' => '重慶衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225594/index.m3u8', ),
+3766 => array ( 'name' => '東南衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225598/index.m3u8', ),
+3767 => array ( 'name' => '河北衛視', 'playurl' => 'http://183.207.249.7/PLTV/3/224/3221225602/index.m3u8', ),
+3768 => array ( 'name' => '新疆衛視', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225523/index.m3u8', ),
+3769 => array ( 'name' => '貴州衛視', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225540/index.m3u8', ),
+3770 => array ( 'name' => '江西衛視', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225537/index.m3u8', ),
+3771 => array ( 'name' => '遼寧衛視', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225566/index.m3u8', ),
+3772 => array ( 'name' => '四川衛視', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225570/index.m3u8', ),
+3773 => array ( 'name' => '內蒙古衛視', 'playurl' => 'http://183.207.249.15/PLTV/3/224/3221225624/index.m3u8', ), 
+    );
+    return $tv;
+}
+$cctv = cctv();
+$cntv = cntv();
+$wstv = wstv();
+$qttv = qttv(); 
+$letv = letv();
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电视频道</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+<link rel="stylesheet" href="{MODULE_URL}/weui/weuix.min.css"/>
+<link rel="stylesheet" type="text/css" href="{MODULE_URL}style/css/base.css">
+<link rel="stylesheet" type="text/css" href="{MODULE_URL}style/css/li.css">
+<script src="{MODULE_URL}/weui/zepto.min.js"></script>
+<script src="{MODULE_URL}/weui/iscroll.js"></script>
+<script src="{MODULE_URL}style/js/li.js"></script>
+<script src="{MODULE_URL}/weui/swiper.min.js"></script>
+<script type="text/javascript" src="{MODULE_URL}/chplayer/chplayer.js" charset="utf-8"></script>
+<script>
+  $(function(){
+    TagNav('#tagnav',{
+        type: 'scrollToFirst',
+    });
+    $('.weui_tab').tab({
+    defaultIndex: 0,
+    activeClass:'weui_bar_item_on',
+    onToggle:function(index){
+    if(index>0){
+    alert(index)
+    }
+    }
+});
+});     
+</script>
+<style type="text/css">
+  .leimu_zui{width: auto}
+  .weui-navigator-list li{font-weight: 500}
+  .weui-navigator-list li.weui-state-hover, .weui-navigator-list li.weui-state-active a:after{background-color: none}
+</style>
+</head>
+<body ontouchstart  class="page-bg">
+<section class="logo_box clearfix">
+  <div class="fl"> <a href=""><img class="logo_img" src="{if $settings['logo']}{php echo tomedia($settings['logo'])}{else}{MODULE_URL}style/images/icon_1_06.png{/if}"></a> </div>
+  <div class="sosuo_box fl">
+    <form  action="./index.php" method="get" role="form">
+    <input type="hidden" name="i" value="{$_W['uniacid']}">  
+    <input type="hidden" name="c" value="{$_GPC['c']}">  
+    <input type="hidden" name="do" value="search">  
+    <input type="hidden" name="m" value="{$_GPC['m']}">
+    <input class="btn_com btn_sosuo" type="text" placeholder="请输入影视、电视剧关键词、支持拼音" name="key" value="{$key}">
+    </form>
+  </div>
+  <div class="fr"><a class="tanchu" href="javascript:void(0)"><em class="jilu"></em></a></div>
+</section>
+<div id="tagnav" class="weui-navigator weui-navigator-wrapper">
+  <ul class="weui-navigator-list">
+    <li {if $op == 'index'}class="weui-state-active"{/if}><a href="{php echo $this->createMobileUrl('index');}">首页</a></li>
+    <li {if $op == 'dianying'}class="weui-state-active"{/if}><a href="{php echo $this->createMobileUrl('index',array('op'=>'dianying'));}">电影</a></li>
+    <li {if $op == 'dianshi'}class="weui-state-active"{/if}><a href="{php echo $this->createMobileUrl('index',array('op'=>'dianshi'));}">剧集</a></li>
+    <li {if $op == 'zongyi'}class="weui-state-active"{/if}><a href="{php echo $this->createMobileUrl('index',array('op'=>'zongyi'));}">综艺</a></li>
+    <li {if $op == 'dongman'}class="weui-state-active"{/if}><a href="{php echo $this->createMobileUrl('index',array('op'=>'dongman'));}">动漫</a></li>
+    {loop $category $category_list}
+    <li {if $op == $category_list['id']}class="weui-state-active"{/if}><a href="{php echo $this->createMobileUrl('index',array('op'=>$category_list['id'],'pid'=>$category_list['parentid']));}">{$category_list['name']}</a></li>
+    {/loop} 
+  </ul>
+</div>
+
+<section class="guanzhu_box">
+{if !$_W['fans']['follow']}
+<span class="jishu fl">{$settings['subscribe_title']}</span>
+<a class="guanzhu fl" {if $settings['subscribe_url']}href="{$settings['subscribe_url']}"{else}href="javascript:;"{/if}>立即关注</a>
+<a class="fr" href="javascript:;"><em class="close"></em></a>
+{/if}
+</section>
+
+{if $url}
+<div id="video" style="width:100%;height:250px;"></div><!--播放器容器，需要自行设置尺寸-->
+<script type="text/javascript">
+    var videoObject = {
+        container: '#video', //容器的ID,如果获到容器定义的是ID则需要增加#，如果是class，则不需要添加或添加.
+        variable: 'player',//调用函数名称，该属性主要用于flashplayer发送监听内容时使用，如call('player.time',10)
+        volume: 0.6, //默认音量，范围是0-1
+        poster: '', //封面图片地址
+        autoplay: true, //是否自动播放，默认true=自动播放，false=默认暂停状态
+        loop: false, //是否循环播放，默认false=不需要,true=需要
+        live: true, //是否是直播，默认false=点播放，true=直播
+        loaded: 'loadedHandler', //当播放器加载后执行的函数
+        seek: 0, //默认需要跳转的时间
+        drag: 'start', //在flashplayer情况下是否需要支持按关键帧拖动，不需要留空，需要请填写拖动时请求的属性，本例中使用start，如果需要强制按时间点拖动则增加前缀time_，本例中即time_start，如果需要强制按关键帧进行拖动，则前缀是frames_，本例中即：frames_start
+        front: '', //前一集按钮点击触发函数，即点击前一集时调用的函数名称，默认为空
+        next: '', //下一集按钮点击触发函数，即点击下一集时调用的函数名称，默认为空
+        flashplayer:false,//强制使用flashplayer
+        html5m3u8:false,//是否使用hls，默认不选择，如果此属性设置成true，则不能设置flashplayer:true,
+        chtrack:{
+            src:'srt.srt',
+            charset:'utf-8'
+        },//chplayer使用的字幕文件及编码
+       
+        debug:false,//是否开启调试模式，默认false，不开启
+        video: [
+            ['{$_GPC['url']}', 'video/m3u8', '中文标清', 0]           
+        ]//视频地址数组。视频地址可以分多种形式，具体在下面会有详细介绍
+    };
+    var player = new chplayer(videoObject);//创建一个播放器函数并附给player变量，（player需要和 var videoObject里的属性variable相同）
+</script>
+{/if}  
+<div class="page-bd">  
+<ul>
+<li {if $_GPC['channel']=='cctv'}class="js-show"{/if}>  
+<div class="weui-flex js-category">
+    <p class="weui-flex-item">CCTV</p>
+    <i class="icon icon-74"></i>
+</div>
+<div class="page-category js-categoryInner">    
+<div class="weui_cells weui_cells_access" style="margin-top: 0px;">
+{loop $cctv $c}
+<a class="weui_cell {if $url == $c['playurl']}f-red{/if}" href="{php echo $this->createMobileUrl('tv', array('url'=>$c['playurl'],'channel'=>'cctv'))}">
+    <div class="weui_cell_bd weui_cell_primary">
+        <p>{$c['name']}</p>
+    </div>
+    <div class="weui_cell_ft"></div>
+</a>  
+{/loop}    
+</div>
+</div>
+</li>  
+<li {if $_GPC['channel']=='wstv'}class="js-show"{/if}>
+<div class="weui-flex js-category">
+    <p class="weui-flex-item">卫视频道</p>
+    <i class="icon icon-74"></i>
+</div>
+<div class="page-category js-categoryInner">    
+<div class="weui_cells weui_cells_access" style="margin-top: 0px;">
+{loop $wstv $c}
+<a class="weui_cell {if $url == $c['playurl']}f-red{/if}" href="{php echo $this->createMobileUrl('tv', array('url'=>$c['playurl'],'channel'=>'wstv'))}">
+    <div class="weui_cell_bd weui_cell_primary">
+        <p>{$c['name']}</p>
+    </div>
+    <div class="weui_cell_ft"></div>
+</a>  
+{/loop}    
+</div>
+</div>
+</li> 
+
+<li {if $_GPC['channel']=='letv'}class="js-show"{/if}>
+<div class="weui-flex js-category">
+    <p class="weui-flex-item">乐视频道</p>
+    <i class="icon icon-74"></i>
+</div>
+<div class="page-category js-categoryInner">    
+<div class="weui_cells weui_cells_access" style="margin-top: 0px;">
+{loop $letv $c}
+<a class="weui_cell {if $url == $c['playurl']}f-red{/if}" href="{php echo $this->createMobileUrl('tv', array('url'=>$c['playurl'],'channel'=>'letv'))}">
+    <div class="weui_cell_bd weui_cell_primary">
+        <p>{$c['name']}</p>
+    </div>
+    <div class="weui_cell_ft"></div>
+</a>  
+{/loop}    
+</div>
+</div>
+</li> 
+
+<li {if $_GPC['channel']=='cntv'}class="js-show"{/if}>
+<div class="weui-flex js-category">
+    <p class="weui-flex-item">CNTV</p>
+    <i class="icon icon-74"></i>
+</div>
+<div class="page-category js-categoryInner">    
+<div class="weui_cells weui_cells_access" style="margin-top: 0px;">
+{loop $cntv $c}
+<a class="weui_cell {if $url == $c['playurl']}f-red{/if}" href="{php echo $this->createMobileUrl('tv', array('url'=>$c['playurl'],'channel'=>'cntv'))}">
+    <div class="weui_cell_bd weui_cell_primary">
+        <p>{$c['name']}</p>
+    </div>
+    <div class="weui_cell_ft"></div>
+</a>   
+{/loop}    
+</div>
+</div>
+</li>
+<li {if $_GPC['channel']=='qttv'}class="js-show"{/if}>
+<div class="weui-flex js-category">
+    <p class="weui-flex-item">其他频道</p>
+    <i class="icon icon-74"></i>
+</div>
+<div class="page-category js-categoryInner">    
+<div class="weui_cells weui_cells_access" style="margin-top: 0px;">
+{loop $qttv $c}
+<a class="weui_cell {if $url == $c['playurl']}f-red{/if}" href="{php echo $this->createMobileUrl('tv', array('url'=>$c['playurl'],'channel'=>'qttv'))}">
+    <div class="weui_cell_bd weui_cell_primary">
+        <p>{$c['name']}</p>
+    </div>
+    <div class="weui_cell_ft"></div>
+</a>   
+{/loop}    
+</div>
+</div>
+</li>           
+</ul>
+</div> 
+{if $settings['ad_thumb']}
+<div style="margin: 10px">
+<a href="{$settings['ad_link']}"><img src="{php echo tomedia($settings['ad_thumb'])}" width="100%"></a>
+</div>
+{/if} 
+<script>
+$(function(){
+    $('.js-category').click(function(){
+    $parent = $(this).parent('li');
+    if($parent.hasClass('js-show')){
+            $parent.removeClass('js-show');
+            $(this).children('i').removeClass('icon-35').addClass('icon-74');
+        }else{
+            $parent.siblings().removeClass('js-show');
+            $parent.addClass('js-show');
+            $(this).children('i').removeClass('icon-74').addClass('icon-35');
+            $parent.siblings().find('i').removeClass('icon-35').addClass('icon-74');
+        }
+    });
+});
+</script>
+{template 'news/footer'} 
+{template 'jilu'} 
+</body>
+</html>

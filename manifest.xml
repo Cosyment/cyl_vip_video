@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.we7.cc" versionCode="0.6"> 
+	<application setting="true">
+		<name><![CDATA[全网VIP视频电影免费看片神器]]></name>
+		<identifie><![CDATA[cyl_vip_video]]></identifie>
+		<version><![CDATA[2.79]]></version> 
+		<type><![CDATA[business]]></type>
+		<ability><![CDATA[全网VIP视频在线免费看]]></ability>
+		<description><![CDATA[全网VIP视频在线免费看]]></description> 
+		<author><![CDATA[温盟网www.yujianxia.cn]]></author>
+		<url><![CDATA[http://www.yujianxia.cn]]></url>
+	</application>
+	<platform>		
+		<handles>
+	      <message type="text" />
+	    </handles> 
+		<rule embed="true" />
+		<card embed="false" />
+	</platform>
+	<bindings>
+		<cover>
+			<entry title="首页" do="index" state="" direct="false" />
+			<entry title="搜片" do="search" state="" direct="false" />
+      <entry title="发现" do="discover" state="" direct="false" />
+			<entry title="会员中心" do="member" state="" direct="false" />
+		</cover>
+		<menu>
+			<entry title="分类管理" do="category" state="" direct="false" />
+			<entry title="视频管理" do="manage" state="" direct="false" />
+			<entry title="订单管理" do="order" state="" direct="false" />
+			<entry title="会员管理" do="member" state="" direct="false" />
+      <entry title="幻灯片管理" do="hdp" state="" direct="false" />
+      <entry title="广告管理" do="ad" state="" direct="false" />
+			<entry title="卡密管理" do="card" state="" direct="false" />
+		</menu>
+	</bindings>
+	<permissions>
+	</permissions>
+	<install><![CDATA[install.php]]></install>
+	<uninstall><![CDATA[
+DROP TABLE IF EXISTS `ims_cyl_vip_video`;
+DROP TABLE IF EXISTS `ims_cyl_vip_video_member`;
+DROP TABLE IF EXISTS `ims_cyl_vip_video_order`;
+DROP TABLE IF EXISTS `ims_cyl_vip_video_hdp`;
+DROP TABLE IF EXISTS `ims_cyl_vip_video_manage`;
+DROP TABLE IF EXISTS `ims_cyl_vip_video_category`;
+DROP TABLE IF EXISTS `ims_cyl_vip_video_keyword`;
+DROP TABLE IF EXISTS `ims_cyl_vip_video_keyword_id`;
+DROP TABLE IF EXISTS `ims_cyl_vip_video_share`;
+DROP TABLE IF EXISTS `ims_cyl_vip_video_message`; 
+DROP TABLE IF EXISTS `ims_cyl_vip_video_ad`; 
+		]]></uninstall>
+	<upgrade><![CDATA[upgrade.php]]></upgrade>
+</manifest>
